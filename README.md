@@ -251,7 +251,7 @@ push_data = {
     'cid': CONFIG['hui xiao_cid'],
     'group': CONFIG['hui xiao_group'],
     'title': f'📬 {sender_name}',  # 标题显示发件人
-    'content': f'{message} ({current_time})',  # 内容显示完整消息和时间
+    'content': f'{message} ',  # 内容显示完整消息
     'icon': CONFIG['hui xiao_icon']
 }
 ```
@@ -485,23 +485,7 @@ docker logs -f mattermost-listener
 ./control.sh restart
 ```
 
-### 问题 3：时间不正确
-
-**解决方案**：
-
-代码已强制使用 `Asia/Shanghai` 时区，检查服务器时间设置：
-
-```bash
-docker exec mattermost-listener date
-```
-
-如果时间不对，可能是宿主机时区问题，建议设置：
-
-```bash
-timedatectl set-timezone Asia/Shanghai
-```
-
-### 问题 4：数据库连接失败
+### 问题 3：数据库连接失败
 
 **解决方案**：
 
@@ -518,7 +502,7 @@ timedatectl set-timezone Asia/Shanghai
    docker ps | grep postgres
    ```
 
-### 问题 5：推送失败 HTTP 错误
+### 问题 4：推送失败 HTTP 错误
 
 **解决方案**：
 
@@ -683,7 +667,7 @@ git pull origin main
 
 ```bash
 # 克隆项目
-git clone https://github.com/yourusername/mattermost-push.git
+git clone https://github.com/Albert-zhw/mattermost-push.git
 
 # 进入目录
 cd mattermost-push/Mattermost-Push
@@ -750,8 +734,8 @@ A: 可以！只要有 Docker 环境，Windows、macOS、Linux 都支持。
 
 ## 📞 联系方式
 
-- **项目地址**: <https://github.com/yourusername/mattermost-push>
-- **问题反馈**: <https://github.com/yourusername/mattermost-push/issues>
+- **项目地址**: [https://github.com/lbert-zhw/mattermost-push](https://github.com/yourusername/mattermost-push)
+- **问题反馈**: [https://github.com/Albert-zhw/mattermost-push/issues](https://github.com/yourusername/mattermost-push/issues)
 
 ***
 
@@ -777,14 +761,6 @@ A: 可以！只要有 Docker 环境，Windows、macOS、Linux 都支持。
 - [ ] 添加推送历史记录
 - [ ] 支持更多推送平台
 - [ ] 支持消息类型过滤（@mention、关键字等）
-
-***
-
-## 📚 相关文档
-
-- [Nextcloud Talk Push](../Nextcloud-Talk-Push/README.md) - Nextcloud Talk 推送方案
-- [技术对比说明](../技术对比说明.md) - Talk vs Mattermost 技术对比
-- [故障报告和解决方案](../故障报告和解决方案.md) - 常见问题排查
 
 ***
 
