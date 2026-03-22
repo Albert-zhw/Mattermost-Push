@@ -732,7 +732,7 @@ A: 可以！只要有 Docker 环境，Windows、macOS、Linux 都支持。
 
 ## 📞 联系方式
 
-- **项目地址**: [https://github.com/lbert-zhw/mattermost-push](https://github.com/yourusername/mattermost-push)
+- **项目地址**: [https://github.com/Albert-zhw/mattermost-push](https://github.com/yourusername/mattermost-push)
 - **问题反馈**: [https://github.com/Albert-zhw/mattermost-push/issues](https://github.com/yourusername/mattermost-push/issues)
 
 ***
