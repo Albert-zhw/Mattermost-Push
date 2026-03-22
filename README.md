@@ -110,8 +110,6 @@ CONFIG = {
     'hui xiao_cid': 'YOUR_CID_HERE',     # TODO: 替换为您的回逍 CID
     'hui xiao_icon': 'https://example.com/your-icon.png',  # TODO: 替换为您自定义的图标
     'hui xiao_group': 'Mattermost',
-    'hui xiao_title': '📬 Mattermost',
-    'hui xiao_content': '📧 New Message',
     
     # 用户过滤配置
     'exclude_users': ['your_username'],  # TODO: 替换为您的用户名
